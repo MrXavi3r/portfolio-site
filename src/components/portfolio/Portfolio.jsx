@@ -7,35 +7,13 @@ import {
   mobilePortfolio,
   designPortfolio,
   contentPortfolio,
-} from "../../data";
+} from "../../data/portfolioData";
+import { list } from "../../data/listTabData";
 import { useEffect } from "react";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-
-  const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-  ];
 
   useEffect(() => {
     switch (selected) {

@@ -1,16 +1,16 @@
 @import '../../global.scss';
 
 .works {
-  background: #cb356b; /* fallback for old browsers */
+  background: #c5bbbe; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #bd3f32,
+    #f3c5c0,
     #cb356b
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #bd3f32,
-    #cb356b
+    #f89087,
+    #e7dadf
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: flex;
@@ -74,9 +74,7 @@
         .left {
           flex: 4;
           height: 80%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex();
 
           .leftContainer {
             width: 90%;
@@ -96,9 +94,7 @@
               height: 40px;
               border-radius: 50%;
               background-color: lightcoral;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              @include flex();
 
               @include mobile{
                 width: 20px;
@@ -138,9 +134,7 @@
         .right {
           flex: 8;
           height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex();
           overflow: hidden;
 
           img {

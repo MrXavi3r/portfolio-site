@@ -33,7 +33,7 @@
         align-items: center;
         margin-left: 30px;
 
-        @include mobile{
+        @include mobile {
           display: none;
         }
 
@@ -45,6 +45,14 @@
         span {
           font-size: 15px;
           font-weight: 500;
+        }
+        .phone {
+          &:hover + .phoneNum {
+            display: block;
+          }
+        }
+        .phoneNum {
+          display: none;
         }
       }
     }

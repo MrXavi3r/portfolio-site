@@ -10,15 +10,20 @@ export default function About() {
             <section className="lta">
               <p>
                 I've always had a passion for tech, but I have truly grown to
-                love software development.
+                love software development. I'm just getting started.
               </p>
             </section>
             <section className="ltb">
-              <img src="assets/xavier.jpg" alt="xavier" className="xavier" />
+              <img src="assets/programmer.svg" alt="xavier" className="xavier" />
             </section>
           </div>
           <div className="left-center">
-            <section className="lca"></section>
+            <section className="lca">
+              <img src="assets/computer.svg" alt="forex" />
+              <img src="assets/bitcoin.svg" alt="forex" />
+              <img src="assets/rising.svg" alt="forex" />
+              <img src="assets/exchange-rate.svg" alt="forex" />
+            </section>
             <section className="lcb">
               <p>
                 I've been involved in financial markets as a trader for just
@@ -31,14 +36,16 @@ export default function About() {
           <div className="left-bottom">
             <section className="lba">
               <p>
-                Despite bow much time I spend in front of the computer, I'm a
-                big outdoors guy. I love watching and playing sports, running on
+                Despite how much time I spend in front of the computer, I'm a
+                big outdoors guy. I love watching and playing sports, running at
                 the track and pickup basketball games. I'd like to explore
                 outside even more. Skydiving is on my bucket list, and I love to
                 go scuba diving whenever I can.
               </p>
             </section>
-            <section className="lbb"></section>
+            <section className="lbb">
+              <img src="assets/scuba.svg" alt="scuba" />
+            </section>
           </div>
         </div>
         <div className="page right">

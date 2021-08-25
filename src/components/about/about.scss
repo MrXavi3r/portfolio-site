@@ -13,7 +13,7 @@
 
   .container {
     @include flex();
-    height: 80%;
+    height: 85%;
     width: 100%;
     overflow: hidden;
 
@@ -23,16 +23,17 @@
       height: 100%;
       width: 40%;
       border-radius: 15px;
+      box-shadow: 0 0 10px;
 
       &.left {
-        margin-right: 50px;
-
+        z-index: 1;
+        position: relative;
+        right: 10%;
 
         .left-top {
           @include flex();
           flex: 1;
           overflow: hidden;
-
 
           .lta {
             flex: 1;
@@ -62,9 +63,9 @@
             flex: 1;
             justify-content: space-around;
 
-            img{
-                height: 50px;
-                width: 50px;
+            img {
+              height: 50px;
+              width: 50px;
             }
           }
 
@@ -90,16 +91,77 @@
             flex: 1;
             @include flex();
 
-            img{
-                height: 180px;
-                width: 180px;
+            img {
+              height: 180px;
+              width: 180px;
             }
           }
         }
       }
 
       &.right {
-        margin-left: 50px;
+        @include flexColumn();
+        position: absolute;
+        height: inherit;
+        left: 50%;
+        top: 305%;
+
+        .right-top {
+          flex: 1;
+
+          h2 {
+            padding: 15px;
+          }
+
+          p {
+            font-weight: 300;
+            padding: 0 15px;
+          }
+        }
+        .right-bottom {
+            @include flexColumn();
+          flex: 2;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          .icons-container {
+          }
+          .connect-container {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+              text-decoration: none;
+
+              span {
+                color: black;
+              }
+            }
+
+            .card {
+              @include flexColumn();
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                0 1px 2px rgba(0, 0, 0, 0.24);
+              border-radius: 5px;
+              height: 8rem;
+              width: 8rem;
+            }
+
+            .linkedin {
+              background: linear-gradient(#a1c4fd, #c2e9fb);
+            }
+            .github {
+              background: linear-gradient(#bdc3c7, #fdfbfb);
+            }
+          }
+        }
+        &:hover {
+          z-index: 2;
+          transform: scale(1.03);
+          transition: all 1s ease;
+        }
       }
     }
   }

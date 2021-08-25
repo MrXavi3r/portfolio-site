@@ -49,8 +49,8 @@
           }
 
           .xavier {
-            height: 170px;
-            width: 180px;
+            height: 11rem;
+            width: 11rem;
           }
         }
         .left-center {
@@ -64,8 +64,8 @@
             justify-content: space-around;
 
             img {
-              height: 50px;
-              width: 50px;
+              height: 4rem;
+              width: 4rem;
             }
           }
 
@@ -92,8 +92,8 @@
             @include flex();
 
             img {
-              height: 180px;
-              width: 180px;
+              height: 12rem;
+              width: 12rem;
             }
           }
         }
@@ -107,6 +107,7 @@
         top: 305%;
 
         .right-top {
+          overflow: hidden;
           flex: 1;
 
           h2 {
@@ -119,42 +120,16 @@
           }
         }
         .right-bottom {
-            @include flexColumn();
+          @include flexColumn();
           flex: 2;
+          width: 100%;
 
           img {
-            width: 60px;
-            height: 60px;
+            width: 5rem;
+            height: 5rem;
+            padding: 10px;
           }
           .icons-container {
-          }
-          .connect-container {
-            display: flex;
-            justify-content: space-around;
-
-            a {
-              text-decoration: none;
-
-              span {
-                color: black;
-              }
-            }
-
-            .card {
-              @include flexColumn();
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-                0 1px 2px rgba(0, 0, 0, 0.24);
-              border-radius: 5px;
-              height: 8rem;
-              width: 8rem;
-            }
-
-            .linkedin {
-              background: linear-gradient(#a1c4fd, #c2e9fb);
-            }
-            .github {
-              background: linear-gradient(#bdc3c7, #fdfbfb);
-            }
           }
         }
         &:hover {

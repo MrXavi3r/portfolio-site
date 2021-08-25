@@ -68,6 +68,7 @@ export default function About() {
           </div>
           <div className="right-bottom">
             <section className="icons-container">
+              <img src="assets/html.svg" alt="html" />
               <img src="assets/javascript.svg" alt="javascript" />
               <img src="assets/react.svg" alt="javascript" />
               <img src="assets/mongodb.svg" alt="javascript" />
@@ -77,28 +78,6 @@ export default function About() {
               <img src="assets/nodejs.svg" alt="javascript" />
               <img src="assets/express-js.svg" alt="javascript" />
               <img src="assets/postgresql.svg" alt="javascript" />
-            </section>
-            <section className="connect-container">
-              <a
-                href="https://www.linkedin.com/in/xavier-ritch-254238145/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="linkedin card">
-                  <img src="assets/linkedin.svg" alt="linkedin" />
-                  <span>my LinkedIn</span>
-                </div>
-              </a>
-              <a
-                href="https://github.com/MrXavi3r"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="github card">
-                  <img src="assets/github.svg" alt="github" />
-                  <span>my Github</span>
-                </div>
-              </a>
             </section>
           </div>
         </div>

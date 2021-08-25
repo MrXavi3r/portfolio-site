@@ -1,24 +1,49 @@
 import "./contact.scss";
-import { useState } from "react";
-import { useForm } from "@formspree/react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Contact() {
-  const [message, setMessage] = useState("");
-  const [state, handleSubmit] = useForm("xwkrywaq");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [messageField, setMessageField] = useState("");
+  const [validationMessage, setValidationMessage] = useState("");
 
-  //NEEDS ATTENTION
-  const formValidator = () => {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const messageField = document.getElementById("message-field").value;
+  const fetchData = async () => {
+    const response = await axios.post("https://formspree.io/f/xwkrywaq", {
+      name,
+      email,
+      messageField,
+    });
+    console.log(response)
+  };
 
-    console.log(name, email, messageField, message);
+  useEffect(() => {
+    const messageTimeout = setTimeout(() => {
+      setValidationMessage("");
+    }, 5000);
+    return () => clearTimeout(messageTimeout);
+  }, [validationMessage]);
 
-    if(name !== "" && messageField !== '' && email !== ""){
-      setMessage('thanks I will reply ASAP!')
-      handleSubmit()
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let validation = document.getElementById("validation-message");
+
+    if (name === "" || messageField === "" || email === "") {
+      validation.style.color = "red";
+      setValidationMessage("please check inputs and try again");
+    } else if (!email.includes("@")) {
+      validation.style.color = "red";
+      setValidationMessage("please verify your email address");
+    } else if (!email.includes(".")) {
+      validation.style.color = "red";
+      setValidationMessage("please verify your email address");
     } else {
-      setMessage("please check input fields and try again")
+      fetchData();
+      validation.style.color = "green";
+      setName("");
+      setEmail("");
+      setMessageField("");
+      setValidationMessage("Thanks! I will reply ASAP");
     }
   };
 
@@ -29,16 +54,32 @@ export default function Contact() {
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form onSubmit={formValidator}>
-          <input type="text" placeholder="Name" name="name" id="name" />
-          <input type="email" placeholder="Email" name="email" id="email" />
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <textarea
-            placeholder="message"
+            placeholder="your message here..."
             name="message"
             id="message-field"
+            value={messageField}
+            onChange={(e) => setMessageField(e.target.value)}
           ></textarea>
-          <button type="submit" disabled={state.submitting}>Send</button>
-          <span>{message}</span>
+          <button type="submit">Send</button>
+          <span id="validation-message">{validationMessage}</span>
         </form>
       </div>
     </div>

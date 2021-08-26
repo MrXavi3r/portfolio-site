@@ -1,5 +1,6 @@
 import "./topbar.scss";
-import { Phone, Mail } from "@material-ui/icons";
+import { Phone } from "@material-ui/icons";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 export default function Topbar({ setMenuOpen, menuOpen }) {
   return (
@@ -10,8 +11,14 @@ export default function Topbar({ setMenuOpen, menuOpen }) {
             Xavier
           </a>
           <div className="itemContainer">
-            <Mail className="icon" />
-            <span>xritch89@hotmail.com</span>
+            <GitHubIcon className="icon" />
+            <a
+              href="https://www.github.com/MrXavi3r"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/MrXavi3r
+            </a>
           </div>
           <div className="itemContainer">
             <Phone className="icon phone" />

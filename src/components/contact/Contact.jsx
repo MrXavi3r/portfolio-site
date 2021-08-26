@@ -14,7 +14,7 @@ export default function Contact() {
       email,
       messageField,
     });
-    console.log(response)
+    console.log(response);
   };
 
   useEffect(() => {
@@ -30,13 +30,10 @@ export default function Contact() {
 
     if (name === "" || messageField === "" || email === "") {
       validation.style.color = "red";
-      setValidationMessage("please check inputs and try again");
-    } else if (!email.includes("@")) {
+      setValidationMessage("please properly fill all input fields");
+    } else if (!email.includes("@") || !email.includes(".")) {
       validation.style.color = "red";
-      setValidationMessage("please verify your email address");
-    } else if (!email.includes(".")) {
-      validation.style.color = "red";
-      setValidationMessage("please verify your email address");
+      setValidationMessage("please review your email address");
     } else {
       fetchData();
       validation.style.color = "green";
@@ -53,7 +50,7 @@ export default function Contact() {
         <img src="assets/shake.svg" alt="handshake" />
       </div>
       <div className="right">
-        <h2>Contact</h2>
+        <h2>Message Me</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

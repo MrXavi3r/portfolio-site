@@ -12,6 +12,7 @@ export default function Works() {
 
   return (
     <div className="works" id="works">
+    <h2>Showcase</h2>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

@@ -40,10 +40,9 @@ export default function About() {
           <div className="left-bottom">
             <section className="lba">
               <p>
-                Despite how much time I spend in front of the computer, I'm a
-                big outdoors guy. I love watching and playing sports, running at
-                the track and pickup basketball games. I'd like to explore
-                outside even more. Skydiving is on my bucket list, and I love to
+                Despite the time I spend online, I'm a
+                big outdoors guy. I love playing sports, running at
+                the track and pickup basketball. I like to explore. Skydiving is on my bucket list, and I love to
                 go scuba diving whenever I can.
               </p>
             </section>

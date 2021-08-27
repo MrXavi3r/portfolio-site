@@ -9,6 +9,10 @@
     color: white;
     padding-top: 30px;
     padding-left: 20px;
+
+    @include mobile {
+      padding-top: 0;
+    }
   }
 
   .container {
@@ -29,6 +33,12 @@
         z-index: 1;
         position: relative;
         right: 10%;
+
+        @include mobile {
+          width: 90%;
+          height: 100%;
+          right: 0;
+        }
 
         .left-top {
           @include flex();
@@ -66,6 +76,21 @@
             img {
               height: 4rem;
               width: 4rem;
+
+              @include mobile {
+                height: 3rem;
+                padding: 6px 0;
+              }
+            }
+
+            img:nth-child(3) {
+              @include mobile {
+                display: none;
+              }
+            }
+
+            @include mobile {
+              @include flexColumn();
             }
           }
 
@@ -106,8 +131,13 @@
         left: 50%;
         top: 305%;
 
+        @include mobile {
+          display: none;
+        }
+
         .right-top {
           overflow: hidden;
+          text-overflow: ellipsis;
           flex: 1;
 
           h2 {
@@ -125,11 +155,9 @@
           width: 100%;
 
           img {
-            width: 5rem;
-            height: 5rem;
+            width: 4rem;
+            height: 4rem;
             padding: 10px;
-          }
-          .icons-container {
           }
         }
         &:hover {

@@ -1,17 +1,18 @@
 @import "../../global.scss";
 
 .works {
-  background: #c5bbbe; 
-  background: -webkit-linear-gradient(
-    to right,
-    #f3c5c0,
-    #cb356b
-  ); 
-  background: linear-gradient(
-    to right,
-    #e28f87,
-    #e7dadf
-  ); 
+  background: #ecd5d9; 
+
+  .works-heading{
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
 
   @include flex();
   position: relative;

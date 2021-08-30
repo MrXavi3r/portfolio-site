@@ -8,15 +8,15 @@ export const list = [
       title: "Web App",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "games",
+      title: "Games",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "websites",
+      title: "Websites",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "coming-soon",
+      title: "Coming Soon",
     },
   ];

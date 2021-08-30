@@ -42,8 +42,8 @@ export default function About() {
               <p>
                 Despite the time I spend online, I'm a
                 big outdoors guy. I love playing sports, running at
-                the track and pickup basketball. I like to explore. Skydiving is on my bucket list, and I love to
-                go scuba diving whenever I can.
+                the track and pickup basketball. I love to explore. Skydiving is on my bucket list, and I love to
+                go scuba diving whenever possible.
               </p>
             </section>
             <section className="lbb">

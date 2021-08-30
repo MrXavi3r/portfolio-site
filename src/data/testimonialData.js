@@ -19,7 +19,7 @@ export const data = [
     {
       id: 3,
       name: "Donovan",
-      title: "Owner of Pets.com",
+      title: "Owner of Petx.com",
       img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/dog.png",
       desc: "Xavier built an awesome website for me. I'm really pleased with the result. Looking forward to working with him again",

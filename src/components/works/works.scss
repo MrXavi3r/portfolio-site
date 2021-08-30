@@ -1,9 +1,10 @@
 @import "../../global.scss";
 
 .works {
-  background: #ecd5d9; 
+  background-color: #8d5185;
+  background-image: linear-gradient(315deg, #8d5185 0%, #a1bafe 74%);
 
-  .works-heading{
+  .works-heading {
     color: #fff;
     font-size: 50px;
     position: absolute;

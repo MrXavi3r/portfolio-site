@@ -4,9 +4,9 @@ import "./portfolio.scss";
 import {
   featuredPortfolio,
   webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  gamePortfolio,
+  websitePortfolio,
+  comingSoonPortfolio,
 } from "../../data/portfolioData";
 import { list } from "../../data/listTabData";
 import { useEffect } from "react";
@@ -23,14 +23,14 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "games":
+        setData(gamePortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "websites":
+        setData(websitePortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "coming-soon":
+        setData(comingSoonPortfolio);
         break;
       default:
         setData(featuredPortfolio);

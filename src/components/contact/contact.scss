@@ -3,6 +3,7 @@
 .contact {
   background-color: white;
   display: flex;
+  font-family: "congenial",sans-serif;
 
   @include mobile {
     flex-direction: column;
@@ -32,6 +33,10 @@
       align-items: center;
       justify-content: space-around;
 
+      label {
+        font-weight: 600;
+      }
+
       input {
         width: 300px;
         height: 30px;
@@ -55,14 +60,22 @@
       }
 
       button {
-        width: 150px;
-        height: 30px;
+        width: 15rem;
+        height: 3rem;
         color: #fff;
+        font-size: 1.5rem;
+        font-family: "congenial",sans-serif;
         background-color: rgb(241, 9, 55);
         border: none;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
+        padding: 10px 0;
+
+        @include mobile {
+          width: 10rem;
+          height: 2rem;
+        }
       }
     }
   }

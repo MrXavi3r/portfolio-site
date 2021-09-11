@@ -1,14 +1,13 @@
 @import "../../global.scss";
 
 .about {
-  background: rgb(207, 232, 248);
+  background: #f5f4f2;
 
   h1 {
     width: fit-content;
     font-size: 40px;
-    color: white;
-    padding-top: 30px;
-    padding-left: 20px;
+    color: red;
+    padding: 10px 0 5px 20px;
 
     @include mobile {
       padding-top: 0;
@@ -21,36 +20,46 @@
     width: 100%;
     overflow: hidden;
 
+    @include mobile {
+      height: 92%;
+    }
+
     .page {
       background-color: white;
       @include flexColumn();
       height: 100%;
-      width: 40%;
       border-radius: 15px;
-      box-shadow: 0 0 10px;
+      box-shadow: 0 0 10px rgb(148, 92, 150);
 
       &.left {
-        z-index: 1;
+        width: 95%;
         position: relative;
-        right: 10%;
+        background-color: lightblue;
 
         @include mobile {
-          width: 90%;
+          width: 95%;
           height: 100%;
           right: 0;
+          font-size: .9rem;
         }
 
         .left-top {
           @include flex();
           flex: 1;
           overflow: hidden;
+          width: 100%;
 
           .lta {
             flex: 1;
-
+            justify-content: flex-start;
             p {
               font-weight: 300;
               padding-left: 25px;
+              font-weight: 500;
+
+              @include mobile {
+                padding-left: 5px;
+              }
             }
           }
           .ltb {
@@ -74,19 +83,8 @@
             justify-content: space-around;
 
             img {
-              height: 4rem;
-              width: 4rem;
-
-              @include mobile {
-                height: 3rem;
-                padding: 6px 0;
-              }
-            }
-
-            img:nth-child(3) {
-              @include mobile {
-                display: none;
-              }
+              height: 11rem;
+              width: 11rem;
             }
 
             @include mobile {
@@ -97,7 +95,12 @@
           .lcb {
             flex: 1;
             p {
-              font-weight: 300;
+              font-weight: 500;
+              
+              mark {
+                color: red;
+                background-color: inherit;
+              }
             }
           }
         }
@@ -111,6 +114,11 @@
             flex: 1;
             font-weight: 300;
             padding-left: 25px;
+            font-weight: 500;
+
+            @include mobile {
+              padding-left: 5px;
+            }
           }
           .lbb {
             flex: 1;
@@ -124,48 +132,50 @@
         }
       }
 
-      &.right {
-        @include flexColumn();
-        position: absolute;
-        height: inherit;
-        left: 50%;
-        top: 305%;
+      // under construction!
+      
+      // &.right {
+      //   background-color: lightblue;
+      //   @include flexColumn();
+      //   position: absolute;
+      //   height: 40%;
+      //   width: 30%;
+      //   left: 50%;
+      //   top: 302%;
 
-        @include mobile {
-          display: none;
-        }
+      //   @include mobile {
+      //     display: none;
+      //   }
 
-        .right-top {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          flex: 1;
+      //   .right-top {
+      //     color: #fff;
+      //     flex: 1;
 
-          h2 {
-            padding: 15px;
-          }
+      //     h2 {
+      //       padding: 15px;
+      //     }
 
-          p {
-            font-weight: 300;
-            padding: 0 15px;
-          }
-        }
-        .right-bottom {
-          @include flexColumn();
-          flex: 2;
-          width: 100%;
+      //     p {
+      //       font-weight: 300;
+      //       padding: 0 15px;
+      //     }
+      //   }
+      //   .right-bottom {
+      //     @include flexColumn();
+      //     flex: 2;
+      //     width: 100%;
 
-          img {
-            width: 4rem;
-            height: 4rem;
-            padding: 10px;
-          }
-        }
-        &:hover {
-          z-index: 2;
-          transform: scale(1.03);
-          transition: all 1s ease;
-        }
-      }
+      //     img {
+      //       width: 4rem;
+      //       height: 4rem;
+      //       padding: 10px;
+      //     }
+      //   }
+      //   &:hover {
+      //     transform: scale(1.03);
+      //     transition: all 1s ease;
+      //   }
+      // }
     }
   }
 }

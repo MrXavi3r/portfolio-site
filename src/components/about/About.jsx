@@ -3,14 +3,16 @@ import "./about.scss";
 export default function About() {
   return (
     <div className="about" id="about">
-      <h1>A LITTLE ABOUT ME...</h1>
+      <h1>A BIT ABOUT ME...</h1>
       <div className="container">
         <div className="page left">
           <div className="left-top">
             <section className="lta">
               <p>
-                I've always had a passion for tech, but I have truly grown to
-                love software development. I'm just getting started.
+                My passion for tech has always been a driver, but I have truly
+                grown to love software development. I'm most familiar with
+                Javascript/React on the front end and Node/Express, MongoDb on
+                the backend, but open to virtually all stacks
               </p>
             </section>
             <section className="ltb">
@@ -23,27 +25,31 @@ export default function About() {
           </div>
           <div className="left-center">
             <section className="lca">
-              <img src="assets/computer.svg" alt="forex" />
+              {/* <img src="assets/computer.svg" alt="forex" />
               <img src="assets/bitcoin.svg" alt="forex" />
-              <img src="assets/rising.svg" alt="forex" />
-              <img src="assets/exchange-rate.svg" alt="forex" />
+              <img src="assets/rising.svg" alt="forex" /> */}
+              <img
+                src="assets/exchange-rate.svg"
+                alt="forex"
+                className="exchange"
+              />
             </section>
             <section className="lcb">
               <p>
-                I've been involved in financial markets as a trader for just
-                over a decade now. When im not coding, I spend much of my time
+                I've been involved in the financial markets as a trader for just
+                over a decade now. When i'm not coding, I spend much of my time
                 online analyzing charts, managing trades, and reading financial
-                news articles
+                news articles. <mark>PRO TIP:</mark> buy and hold onto some bitcoin
               </p>
             </section>
           </div>
           <div className="left-bottom">
             <section className="lba">
               <p>
-                Despite the time I spend online, I'm a
-                big outdoors guy. I love playing sports, running at
-                the track and pickup basketball. I love to explore. Skydiving is on my bucket list, and I love to
-                go scuba diving whenever possible.
+                Despite the time I spend online, I'm a big outdoors guy. I love
+                playing sports, running at the track and pickup basketball. I
+                love to explore. Skydiving is on my bucket list, and I love to
+                go scuba diving whenever possible
               </p>
             </section>
             <section className="lbb">
@@ -51,35 +57,15 @@ export default function About() {
             </section>
           </div>
         </div>
-        <div className="page right">
+        {/* <div className="page right">
           <div className="right-top">
-            <h2>TECH STACKS I'M FAMILIAR WITH...</h2>
-            <p>
-              I keep an open mind to any language, library, or framework, as I
-              recognize that each is simply a tool for which to achieve an end.
-              Its always best to choose the best tools for the job. Though with
-              that being said, focus is important, and for that reason I work
-              primarily in Javascript and with the React library. On the back
-              end, I'm also familiar with Node.js and the Express framework.
-              CSS, Sass, and Bootstrap for styling, and have some limited
-              experience with MongoDB as well as PostgreSQL.
-            </p>
+            <h2>TECH I USE...</h2>
+            
           </div>
           <div className="right-bottom">
-            <section className="icons-container">
-              <img src="assets/html.svg" alt="html" />
-              <img src="assets/javascript.svg" alt="javascript" />
-              <img src="assets/react.svg" alt="javascript" />
-              <img src="assets/mongodb.svg" alt="javascript" />
-              <img src="assets/sass.svg" alt="javascript" />
-              <img src="assets/bootstrap.svg" alt="javascript" />
-              <img src="assets/css.svg" alt="javascript" />
-              <img src="assets/nodejs.svg" alt="javascript" />
-              <img src="assets/express-js.svg" alt="javascript" />
-              <img src="assets/postgresql.svg" alt="javascript" />
-            </section>
+            
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

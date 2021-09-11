@@ -7,7 +7,9 @@
   align-items: center;
 
   h1 {
-    font-size: 50px;
+    margin-top: 15px;
+    font-size: 3rem;
+    overflow: hidden;
 
     @include mobile{
       font-size: 30px;
@@ -20,6 +22,10 @@
     padding: 0;
     list-style: none;
     display: flex;
+    
+    li {
+      overflow: hidden;
+    }
 
     @include mobile{
       margin: 10px 0;
@@ -35,14 +41,15 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 30px;
+    overflow: auto;
 
     @include mobile{
       width: 100%;
     }
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 14em;
+      height: 12em;
       border-radius: 20px;
       border: 1px solid lightgrey;
       margin: 10px 20px;

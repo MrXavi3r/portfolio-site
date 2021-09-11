@@ -1,6 +1,6 @@
 {
   "name": "xavier-portfolio",
-  "homepage": "http://mrXavi3r.github.io/portfolio-site",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -8,7 +8,7 @@ export default function Contact() {
   const [messageField, setMessageField] = useState("");
   const [validationMessage, setValidationMessage] = useState("");
 
-  const fetchData = async () => {
+  const postData = async () => {
     const response = await axios.post("https://formspree.io/f/xwkrywaq", {
       name,
       email,
@@ -30,12 +30,12 @@ export default function Contact() {
 
     if (name === "" || messageField === "" || email === "") {
       validation.style.color = "red";
-      setValidationMessage("please properly fill all input fields");
+      setValidationMessage("Oops! looks like you missed some input fields");
     } else if (!email.includes("@") || !email.includes(".")) {
       validation.style.color = "red";
-      setValidationMessage("please review your email address");
+      setValidationMessage("your email seems a bit... sketchy");
     } else {
-      fetchData();
+      postData();
       validation.style.color = "green";
       setName("");
       setEmail("");
@@ -52,24 +52,27 @@ export default function Contact() {
       <div className="right">
         <h2>Message Me</h2>
         <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name:</label>
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Clark Kent"
             name="name"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
+          <label htmlFor="name">Email:</label>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="timcook@apple.com"
             name="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <label htmlFor="name">Message:</label>
           <textarea
-            placeholder="your message here..."
+            placeholder="what's on your mind?"
             name="message"
             id="message-field"
             value={messageField}

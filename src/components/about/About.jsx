@@ -1,11 +1,15 @@
 import "./about.scss";
+import diver from '../../diver.svg'
 
 export default function About() {
   return (
     <div className="about" id="about">
       <h1>A BIT ABOUT ME...</h1>
       <div className="container">
-        <div className="page left">
+        <div
+          className="page left"
+          style={{ backgroundImage: `url(${diver})`, backgroundRepeat: "no-repeat" }}
+        >
           <div className="left-top">
             <section className="lta">
               <p>
@@ -39,7 +43,8 @@ export default function About() {
                 I've been involved in the financial markets as a trader for just
                 over a decade now. When i'm not coding, I spend much of my time
                 online analyzing charts, managing trades, and reading financial
-                news articles. <mark>PRO TIP:</mark> buy and hold onto some bitcoin
+                news articles. <mark>PRO TIP:</mark> buy and hold onto some
+                bitcoin
               </p>
             </section>
           </div>

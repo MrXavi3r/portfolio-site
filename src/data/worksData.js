@@ -18,6 +18,6 @@ export const data = [
     icon: "./assets/writing.png",
     title: "Finance Social App",
     desc: "My magnum opus. This pulls finance related posts from twitter, reddit, and facebook APIs and displays them in one user interface. Users may comment on posts or create posts directly on the platform",
-    img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    img: "/assets/mongodb.svg",
   },
 ];

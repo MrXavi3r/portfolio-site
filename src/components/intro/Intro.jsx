@@ -1,6 +1,7 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useRef, useEffect } from "react";
+import clouds from '../../cloud.svg'
 
 
 export default function Intro() {
@@ -16,7 +17,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="intro" id="intro">
+    <div className="intro" id="intro" style={{ backgroundImage: `url(${clouds})`, backgroundRepeat: "no-repeat" }}>
       <div className="left">
         <div className="imgContainer">
           <img src="assets/xavier.svg" alt="xavier" />

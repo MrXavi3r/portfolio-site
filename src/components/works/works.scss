@@ -15,17 +15,19 @@
     @include flex();
     width: 80%;
     height: 60%;
-    border: 2px black solid;
+    border: 1px black solid;
     border-radius: 25px;
     box-shadow: 0 0 10px #655c96;
     margin-bottom: auto;
     overflow: hidden;
 
-    .slick-slider {
-      height: 100%;
-      @include flex();
+    @include mobile{
+      height: 80%;
+      width: 90%;
+    }
+
+    .slick-slider{
       overflow: hidden;
-      background-color: #d1f3e4;
     }
   }
 }

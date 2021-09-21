@@ -3,6 +3,7 @@
 .about {
   background: #f5f4f2;
 
+
   h1 {
     width: fit-content;
     font-size: 40px;
@@ -14,167 +15,65 @@
     }
   }
 
-  .container {
-    @include flex();
-    height: 85%;
-    width: 100%;
-    overflow: hidden;
+  .top{
+    display: flex;
+    height: 40%;
+    // background-color: lightblue;
 
-    @include mobile {
-      height: 92%;
+
+    .top-left{
+      flex: 1;
+      background-size: cover;
+
+      @include mobile{
+        background-size: 13rem;
+      }
     }
+    .top-right{
+      flex: 1;
+      margin: auto;
+      padding: 0 1rem;
 
-    .page {
-      background-color: lightblue;
-      @include flexColumn();
-      height: 100%;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgb(148, 92, 150);
-
-      &.left {
-        width: 95%;
-        position: relative;
-        // background-image: url('/assets/jellyfish.jpg');
-        @include mobile {
-          width: 95%;
-          height: 100%;
-          right: 0;
-          font-size: .9rem;
-        }
-
-        .left-top {
-          @include flex();
-          flex: 1;
-          overflow: hidden;
-          width: 100%;
-
-          .lta {
-            flex: 1;
-            justify-content: flex-start;
-            p {
-              font-weight: 300;
-              padding-left: 25px;
-              font-weight: 500;
-
-              @include mobile {
-                padding-left: 5px;
-              }
-            }
-          }
-          .ltb {
-            @include flexColumn();
-            flex: 1;
-          }
-
-          .xavier {
-            height: 11rem;
-            width: 11rem;
-          }
-        }
-        .left-center {
-          @include flex();
-          flex: 1;
-          overflow: hidden;
-
-          .lca {
-            @include flex();
-            flex: 1;
-            justify-content: space-around;
-
-            img {
-              height: 11rem;
-              width: 11rem;
-            }
-
-            @include mobile {
-              @include flexColumn();
-            }
-          }
-
-          .lcb {
-            flex: 1;
-            p {
-              font-weight: 500;
-              
-              mark {
-                color: red;
-                background-color: inherit;
-              }
-            }
-          }
-        }
-
-        .left-bottom {
-          @include flex();
-          flex: 1;
-          overflow: hidden;
-
-          .lba {
-            flex: 1;
-            font-weight: 300;
-            padding-left: 25px;
-            font-weight: 500;
-
-            @include mobile {
-              padding-left: 5px;
-            }
-          }
-          .lbb {
-            flex: 1;
-            @include flex();
-
-            img {
-              height: 12rem;
-              width: 12rem;
-            }
-          }
+      .forex{
+        margin-bottom: 1rem;
+        @include mobile{
+          display: none;
         }
       }
-
-      // under construction!
-      
-      // &.right {
-      //   background-color: lightblue;
-      //   @include flexColumn();
-      //   position: absolute;
-      //   height: 40%;
-      //   width: 30%;
-      //   left: 50%;
-      //   top: 302%;
-
-      //   @include mobile {
-      //     display: none;
-      //   }
-
-      //   .right-top {
-      //     color: #fff;
-      //     flex: 1;
-
-      //     h2 {
-      //       padding: 15px;
-      //     }
-
-      //     p {
-      //       font-weight: 300;
-      //       padding: 0 15px;
-      //     }
-      //   }
-      //   .right-bottom {
-      //     @include flexColumn();
-      //     flex: 2;
-      //     width: 100%;
-
-      //     img {
-      //       width: 4rem;
-      //       height: 4rem;
-      //       padding: 10px;
-      //     }
-      //   }
-      //   &:hover {
-      //     transform: scale(1.03);
-      //     transition: all 1s ease;
-      //   }
-      // }
     }
   }
+
+  .bottom{
+    @include flex();
+    flex-wrap: wrap;
+    height: 40%;
+    padding: 0 1rem;
+
+    .bottom-left{
+      flex: 1;
+
+
+      .growth{
+        margin-bottom: 1rem;
+
+        @include mobile{
+          display: none;
+        }
+      }
+    }
+
+    .bottom-right{
+      flex: 1;
+      flex-wrap: wrap;
+
+      div{
+        display: inline-block;
+        border: 1px solid rgb(12, 12, 12);
+        padding: 5px;
+        margin: .5rem;
+      }
+    }
+  }
+
+  
 }

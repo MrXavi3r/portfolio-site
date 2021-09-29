@@ -1,6 +1,6 @@
 import "./about.scss";
 import diver from "../../diver.svg";
-import ocean from "../../ocean.svg";
+// import ocean from "../../ocean.svg";
 
 export default function About() {
   return (
@@ -14,7 +14,9 @@ export default function About() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
-        ></div>
+        >
+          <img src="assets/bitcoin.svg" alt="bitcoin" />
+        </div>
         <div className="top-right">
           <p className="forex">
             I've been involved in the financial markets as a trader for just

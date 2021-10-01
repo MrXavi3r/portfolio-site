@@ -34,7 +34,9 @@ export default function About() {
       </div>
       <div className="bottom">
         <div className="bottom-left">
-          <p className="growth">
+        </div>
+        <div className="bottom-right">
+        <p className="growth">
             Growth and impact are what I personally strive for on a daily basis.
             My goals are to continue to improve myself personally and level up
             my skills, while positively impacting those who I come in touch
@@ -46,14 +48,12 @@ export default function About() {
             taking an app from the inception of the idea, through development,
             to deployment and continuous integration.
           </p>
-        </div>
-        <div className="bottom-right">
-          <div>JAVASCRIPT</div>
+          {/* <div>JAVASCRIPT</div>
           <div>REACT</div>
           <div>CSS/SASS</div>
           <div>MONGODB</div>
           <div>NODE/EXPRESS</div>
-          <div>GIT/GITHUB</div>
+          <div>GIT/GITHUB</div> */}
         </div>
       </div>
     </div>

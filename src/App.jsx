@@ -6,6 +6,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import About from './components/about/About'
+import Skills from './components/skills/Skills'
 import "./app.scss";
 import { useState } from "react";
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Portfolio />
         <Works />
         <About />
+        <Skills />
         <Testimonials />
         <Contact />
       </div>

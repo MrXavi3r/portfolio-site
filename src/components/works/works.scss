@@ -13,12 +13,12 @@
 
   .slider-container {
     @include flex();
-    width: 80%;
-    height: 60%;
-    border: 1px black solid;
+    width: 100%;
+    height: 80%;
+    border: none;
     border-radius: 25px;
-    box-shadow: 0 0 10px #655c96;
-    margin-bottom: auto;
+    margin: 0 auto;
+
     overflow: hidden;
 
     @include mobile{

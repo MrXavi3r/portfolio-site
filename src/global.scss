@@ -10,6 +10,12 @@ $width: 768px;
   }
 }
 
+@mixin tablet {
+  @media (min-width: 766px) and (max-width: 992px) {
+    @content;
+  }
+}
+
 @mixin flex {
   display: flex;
   align-items: center;

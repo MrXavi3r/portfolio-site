@@ -48,12 +48,12 @@ export default function Contact() {
     <section className="contact" id="contact">
       <div className="contact-container">
         <div className="left">
-          <h3>Let's talk</h3>
-          <p>
-            Want to grab a cup of coffee and talk technical? Fill out this form
-            for me and i'll get back to you.
-          </p>
-          <form onSubmit={handleSubmit}>
+          <form noValidate onSubmit={handleSubmit}>
+            <h3>Let's talk</h3>
+            <p>
+              Want to grab some coffee and ponder the meaning of life with me?
+              Fill out this form for me and i'll get back to you.
+            </p>
             <label htmlFor="name">Your Name:</label>
             <input
               type="text"
@@ -66,7 +66,7 @@ export default function Contact() {
             <label htmlFor="name">Your Email:</label>
             <input
               type="email"
-              placeholder="timcook@apple.com"
+              placeholder="Kal-El@dailyplanet.net"
               name="email"
               id="email"
               value={email}
@@ -74,7 +74,7 @@ export default function Contact() {
             />
             <label htmlFor="name">Your Message:</label>
             <textarea
-              placeholder="what's on your mind?"
+              placeholder="hey Bruce, this may seem strange, but I need to borrow the jet..."
               name="message"
               id="message-field"
               value={messageField}
@@ -86,11 +86,45 @@ export default function Contact() {
         </div>
         <div className="right">
           <img src="assets/10720.jpg" alt="contact" />
-          <span className="meta">Miami, Fl, USA</span>
-          <span className="meta">xritch89@hotmail.com</span>
-          <div className="contact-icon"></div>
-          <div className="contact-icon"></div>
-          <div className="contact-icon"></div>
+          <div className="meta-container">
+            <span className="meta">
+              <i class="fas fa-map-marker-alt"></i> Miami, Fl, USA
+              <br />
+            </span>
+            <br />
+            <span className="meta">
+              <i class="fas fa-envelope"></i> xritch89@hotmail.com
+            </span>
+          </div>
+          <div className="icon-container">
+            <a
+              href="https://www.linkedin.com/in/xavier-ritch-254238145/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="contact-icon linkedin">
+                <i className="fab fa-linkedin"></i>
+              </div>
+            </a>
+            <a
+              href="https://github.com/MrXavi3r"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="contact-icon github">
+                <i class="fab fa-github"></i>
+              </div>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/12309575/xavi3r"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="contact-icon stack-o">
+                <i class="fab fa-stack-overflow"></i>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>

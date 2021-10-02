@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: #fffdee;
+  background-color: #faebe0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,10 @@
   }
 
   .container {
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
     width: 60%;
     height: 90%;
     display: flex;

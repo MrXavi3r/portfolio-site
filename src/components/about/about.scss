@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .about {
-  // max-width: 1100px;
+  background-color: #f7f2f7;
   @include flex();
 
   @include mobile {
@@ -15,6 +15,15 @@
   .left{
     overflow: hidden;
     flex: 1;
+
+    h2{
+      font-family: Raleway, sans-serif;
+      color: #323c47;
+      font-size: 40px;
+      line-height: 1.5em;
+      font-weight: 600;
+      text-align: right;
+    }
 
     .about-img{
       padding-left: 1rem;
@@ -31,6 +40,10 @@
   .right{
     flex: 1;
     padding-right: 1rem;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     p{
       font-size: 1.5rem;

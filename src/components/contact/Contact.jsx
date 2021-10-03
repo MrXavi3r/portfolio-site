@@ -57,7 +57,7 @@ export default function Contact() {
             <label htmlFor="name">Your Name:</label>
             <input
               type="text"
-              placeholder="Clark Kent"
+              placeholder="Bruce Wayne"
               name="name"
               id="name"
               value={name}
@@ -66,7 +66,7 @@ export default function Contact() {
             <label htmlFor="name">Your Email:</label>
             <input
               type="email"
-              placeholder="Kal-El@dailyplanet.net"
+              placeholder="Bruce@wayneenterprises.net"
               name="email"
               id="email"
               value={email}
@@ -74,7 +74,7 @@ export default function Contact() {
             />
             <label htmlFor="name">Your Message:</label>
             <textarea
-              placeholder="hey Bruce, this may seem strange, but I need to borrow the jet..."
+              placeholder="X! been a while. listen, I think we need a new justice league website..."
               name="message"
               id="message-field"
               value={messageField}

@@ -99,6 +99,12 @@
             }
           }
         }
+        @include mobile {
+          width: 100%;
+        }
+      }
+      @include mobile{
+        @include flexColumn();
       }
     }
     .right {
@@ -173,6 +179,15 @@
           }
         }
       }
+      @include tablet{
+        display: none;
+      }
+      @include mobile{
+        display: none;
+      }
+    }
+    @include mobile {
+      height: 100%;
     }
   }
 }

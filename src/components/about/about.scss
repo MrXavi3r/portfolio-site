@@ -27,14 +27,12 @@
 
     .about-img {
       padding-left: 5rem;
-
-      @include mobile {
-        width: 300px;
-      }
-      @include tablet {
-        width: 400px;
-        margin-top: 10px;
-      }
+    }
+    @include tablet{
+      display: none;
+    }
+    @include mobile{
+      display: none;
     }
   }
   .right {
@@ -64,6 +62,11 @@
           height: 5rem;
           border-radius: 50%;
           @include flex();
+
+          @include mobile{
+            width: 4rem;
+            height: 4rem;
+          }
         }
       }
       .p-container{
@@ -71,6 +74,10 @@
         @include flex();
         height: 100%;
         width: 100%;
+
+        @include mobile{
+          padding-right: 0;
+        }
       }
     }
     .grid-item-1{
@@ -104,6 +111,15 @@
       &:hover{
         background-color: rgb(226, 248, 248);
       }
+    }
+    @include mobile{
+      @include flexColumn();
+      width: 90%;
+      padding-right: 0;
+    }
+    @include tablet{
+      @include flexColumn();
+      width: 70%;
     }
   }
 }

@@ -25,7 +25,7 @@ export default function Skills() {
           <h4>Seamless Backend Integration</h4>
           <p>
             Node/ExpressJs is the perfect server side solution for Javascript
-            front-ends. I'm familiar with creating API's and local servers from
+            front-ends. I'm familiar with creating REST API's and local servers from
             scratch and interfacing with 3rd party API's.
           </p>
         </div>

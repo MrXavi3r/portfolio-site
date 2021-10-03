@@ -12,22 +12,22 @@
     @include flexColumn();
   }
 
-  .left{
+  .left {
     overflow: hidden;
     flex: 1;
 
-    h2{
+    h2 {
       font-family: Raleway, sans-serif;
       color: #323c47;
-      font-size: 40px;
+      font-size: 45px;
       line-height: 1.5em;
-      font-weight: 600;
-      text-align: right;
+      font-weight: 500;
+      text-align: center;
     }
 
-    .about-img{
-      padding-left: 1rem;
-      
+    .about-img {
+      padding-left: 5rem;
+
       @include mobile {
         width: 300px;
       }
@@ -37,29 +37,72 @@
       }
     }
   }
-  .right{
+  .right {
     flex: 1;
     padding-right: 1rem;
     scrollbar-width: none; //for firefox
     &::-webkit-scrollbar {
       display: none;
     }
+    display: grid;
+    grid-template-columns: 80%;
+    height: 90%;
+    align-items: center;
 
-    p{
-      font-size: 1.5rem;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 20px;
-      line-height: 1.8em;
-      font-weight: 400;
-      letter-spacing: 0.3px;
-      margin: .5rem 0;
+    .about-item {
+      @include flex();
+      height: 80%;
+      border-radius: 10px;
 
-      @include mobile {
-        text-align: center;
+      span {
+        width: 30%;
+        height: 100%;
+        @include flex();
+
+        .abt-icon-container {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          @include flex();
+        }
       }
-      @include tablet {
-        text-align: center;
-        padding: 0 1rem;
+      .p-container{
+        padding-right: 1rem;
+        @include flex();
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .grid-item-1{
+      .abt-icon-container{
+        background-color: #f6bb19;
+      }
+      &:hover{
+        background-color: #f8eed3;
+      }
+    }
+    .grid-item-2{
+      &:hover{
+        background-color: #e7d0d9;
+      }
+    }
+    .grid-item-3{
+      .abt-icon-container{
+        background-color: rgb(0, 255, 106);
+        img{
+          width: 80%;
+        }
+      }
+      &:hover{
+        background-color: rgb(223, 247, 233);
+      }
+    }
+    .grid-item-4{
+      .abt-icon-container{
+        background-color: aqua;
+      }
+      &:hover{
+        background-color: rgb(226, 248, 248);
       }
     }
   }

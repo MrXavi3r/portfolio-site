@@ -63,7 +63,11 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 45px;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    margin-right: auto;
+    padding-left: 10rem;
 
     @include mobile {
       font-size: 20px;
@@ -138,7 +142,7 @@
 
       .center {
         padding: 10px;
-        background-color: #d1d2f0;
+        background-color: #adadf7;
         border-radius: 10px;
 
         @include mobile {

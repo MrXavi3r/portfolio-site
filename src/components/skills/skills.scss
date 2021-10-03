@@ -45,7 +45,8 @@
     }
 
     .skill-item {
-      background-color: #e4e9fa;
+      height: 100%;
+      border-radius: 10px;
       @include flexColumn();
 
       img {
@@ -74,7 +75,21 @@
       }
     }
 
-    .item-1 {
+    .item-1{
+      background-color: #f5f9fa;
+    }
+    .item-2{
+      background-color:#f8f7f7;
+    }
+    .item-3{
+      background-color: #f7f4f5;
+
+      img{
+        padding-top: .8rem;
+      }
+    }
+    .item-4{
+      background-color: #f1f5f1;
     }
   }
 }

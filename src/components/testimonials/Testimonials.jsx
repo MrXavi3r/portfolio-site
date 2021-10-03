@@ -4,8 +4,8 @@ import { data } from "../../data/testimonialData";
 export default function Testimonials() {
 
   return (
-    <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+    <section className="testimonials" id="testimonials">
+      <h1>People who've said nice things...</h1>
       <div className="container">
       {data.map((d)=> {
           return (
@@ -34,6 +34,6 @@ export default function Testimonials() {
           )
       })}
       </div>
-    </div>
+    </section>
   );
 }

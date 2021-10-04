@@ -51,8 +51,9 @@
     img {
       @include flex();
       margin: 0 auto;
-      height: inherit;
-      width: 20rem;
+      object-fit: contain;
+      width: 45rem;
+      height: 20rem;
     }
   }
 }

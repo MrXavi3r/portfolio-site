@@ -6,7 +6,7 @@ export default function Skills() {
       <div className="heading-block">
         <h2>Software Development With Purpose</h2>
         <p>
-          Javascript is the core of my engineering skill-set. Each branch below serves complimentary to that.
+          Javascript is the core of my engineering skill-set. Every branch of programming I explore serves to strengthen that.
         </p>
       </div>
       <div className="skill-container">
